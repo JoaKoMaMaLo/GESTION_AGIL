@@ -1,12 +1,12 @@
 from django.urls import path
-from . import views
+from .views import *
 
 
 
 urlpatterns = [
-    path('index', views.index, name='index'),
-    path('signin', views.signin, name='signin'),
-    path('dash', views.dash, name='dash'),
+    path('index/', index, name='index'),
+    path('signin/', signin, name='signin'),
+    path('dash/', dash, name='dash'),
     
 ]
 
