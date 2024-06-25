@@ -46,6 +46,7 @@ class Pieza(models.Model):
     numero_serie = models.CharField(max_length=100)
     descripcion_pieza = models.TextField()
     cantidad_pieza = models.PositiveIntegerField()
+    cantidad_minima_pieza = models.PositiveIntegerField()
     fecha_vencimiento = models.DateField(blank=True, null=True)
     id_ubicacion = models.ForeignKey(Ubicacion, on_delete=models.CASCADE)
     id_categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, blank=True, null=True)
